@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Oct 27 16:32:48 2018
+# Process ID: 12932
+# Current directory: C:/XADC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8412 C:\XADC\Basys-3-XADC.xpr
+# Log file: C:/XADC/vivado.log
+# Journal file: C:/XADC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/XADC/Basys-3-XADC.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/../../repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/XADC/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 826.574 ; gain = 139.289
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 27 16:34:28 2018...

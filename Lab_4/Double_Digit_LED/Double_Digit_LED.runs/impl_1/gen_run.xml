@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1537910992">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="Double_Digit_Counter.drc"/>
+  <File Type="BG-BGN" Name="Double_Digit_Counter.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Double_Digit_Counter.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Double_Digit_Counter.ltx"/>
+  <File Type="BITSTR-MMI" Name="Double_Digit_Counter.mmi"/>
+  <File Type="BITSTR-BMM" Name="Double_Digit_Counter_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Double_Digit_Counter.nky"/>
+  <File Type="BITSTR-RBT" Name="Double_Digit_Counter.rbt"/>
+  <File Type="BITSTR-MSK" Name="Double_Digit_Counter.msk"/>
+  <File Type="BG-BIN" Name="Double_Digit_Counter.bin"/>
+  <File Type="BG-BIT" Name="Double_Digit_Counter.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Double_Digit_Counter_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Double_Digit_Counter_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Double_Digit_Counter_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="Double_Digit_Counter.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Double_Digit_Counter_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Double_Digit_Counter_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Double_Digit_Counter_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Double_Digit_Counter_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Double_Digit_Counter_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Double_Digit_Counter_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Double_Digit_Counter_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Double_Digit_Counter_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Double_Digit_Counter_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Double_Digit_Counter_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Double_Digit_Counter_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Double_Digit_Counter_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Double_Digit_Counter_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Double_Digit_Counter_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="Double_Digit_Counter_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Double_Digit_Counter_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Double_Digit_Counter_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Double_Digit_Counter_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Double_Digit_Counter_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Double_Digit_Counter_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="Double_Digit_Counter_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Double_Digit_Counter_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Double_Digit_Counter_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="Double_Digit_Counter_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Double_Digit_Counter_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Double_Digit_Counter_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Double_Digit_Counter_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Double_Digit_Counter_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Double_Digit_Counter_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Double_Digit_Counter_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="Double_Digit_Counter_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Double_Digit_Counter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Double_Digit_Counter_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Double_Digit_Counter_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Double_Digit_Counter_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Double_Digit_Counter_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Double_Digit_Counter_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Double_Digit_Counter_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="Double_Digit_Counter_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Double_Digit_Counter_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Double_Digit_Counter_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Double_Digit_Counter_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="Double_Digit_Counter_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Double_Digit_Counter.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Double_Digit_Counter_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="Double_Digit_Counter_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Double_Digit_Counter_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Double_Digit_Counter_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Double_Digit_Counter_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="Double_Digit_Counter_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Double_Digit_Counter_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="Double_Digit_Counter.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Double_Digit_Counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Double_Digit_Counter"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

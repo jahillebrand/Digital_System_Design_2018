@@ -1,0 +1,7 @@
+Running: xsim.dir/simple_logic_circuit_testbench_behav/xsimk -simmode gui -wdb simple_logic_circuit_testbench_behav.wdb -simrunnum 0 -socket 43233
+Design successfully loaded
+Design Loading Memory Usage: 42916 KB (Peak: 42972 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 124652 KB (Peak: 190188 KB)
+Simulation CPU Usage: 10 ms

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Oct 27 22:19:12 2018
+# Process ID: 12488
+# Current directory: C:/XADC/Basys-3-XADC.runs/impl_1
+# Command line: vivado.exe -log XADCdemo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source XADCdemo.tcl -notrace
+# Log file: C:/XADC/Basys-3-XADC.runs/impl_1/XADCdemo.vdi
+# Journal file: C:/XADC/Basys-3-XADC.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source XADCdemo.tcl -notrace

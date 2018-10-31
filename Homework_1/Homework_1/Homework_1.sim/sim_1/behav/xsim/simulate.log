@@ -1,0 +1,18 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Time=     6.0ns, a=0, b=0, c=0, d=0, y=0
+Time=    16.0ns, a=0, b=0, c=0, d=1, y=0
+Time=    31.0ns, a=0, b=0, c=1, d=0, y=0
+Time=    51.0ns, a=0, b=0, c=1, d=1, y=0
+Time=    76.0ns, a=0, b=1, c=0, d=0, y=0
+Time=   106.0ns, a=0, b=1, c=0, d=1, y=0
+Time=   141.0ns, a=0, b=1, c=1, d=0, y=1
+Time=   181.0ns, a=0, b=1, c=1, d=1, y=0
+Time=   226.0ns, a=1, b=0, c=0, d=0, y=0
+Time=   276.0ns, a=1, b=0, c=0, d=1, y=0
+Time=   331.0ns, a=1, b=0, c=1, d=0, y=0
+Time=   391.0ns, a=1, b=0, c=1, d=1, y=0
+Time=   456.0ns, a=1, b=1, c=0, d=0, y=0
+Time=   526.0ns, a=1, b=1, c=0, d=1, y=0
+Time=   601.0ns, a=1, b=1, c=1, d=0, y=0
+Time=   681.0ns, a=1, b=1, c=1, d=1, y=0

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3789524946790642453  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 92f1622ecd3344aba4a826a30b7bdc80 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simpleNAND_testbench_behav xil_defaultlib.simpleNAND_testbench xil_defaultlib.glbl" , 
+    buildDate : "Jul 26 2018" , 
+    buildTime : "18:27:14" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/simpleNAND_testbench_behav/xsimk\"   \"xsim.dir/simpleNAND_testbench_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/simpleNAND_testbench_behav/obj/xsim_1.lnx64.o\" \"/opt/Xilinx/Vivado/2018.2/lib/lnx64.o/librdi_simulator_kernel.so\"  \"/opt/Xilinx/Vivado/2018.2/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

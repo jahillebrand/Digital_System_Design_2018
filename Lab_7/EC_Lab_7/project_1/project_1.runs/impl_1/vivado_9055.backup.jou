@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Oct 16 15:53:09 2018
+# Process ID: 9055
+# Current directory: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_7/EC_Lab_7/project_1/project_1.runs/impl_1
+# Command line: vivado -log PmodKeypad.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PmodKeypad.tcl -notrace
+# Log file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_7/EC_Lab_7/project_1/project_1.runs/impl_1/PmodKeypad.vdi
+# Journal file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_7/EC_Lab_7/project_1/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source PmodKeypad.tcl -notrace

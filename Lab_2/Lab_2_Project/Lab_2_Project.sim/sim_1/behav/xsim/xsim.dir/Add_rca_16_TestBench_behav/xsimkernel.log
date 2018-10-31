@@ -1,0 +1,7 @@
+Running: xsim.dir/Add_rca_16_TestBench_behav/xsimk -simmode gui -wdb Add_rca_16_TestBench_behav.wdb -simrunnum 0 -socket 53591
+Design successfully loaded
+Design Loading Memory Usage: 42956 KB (Peak: 43012 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 124692 KB (Peak: 190228 KB)
+Simulation CPU Usage: 10 ms

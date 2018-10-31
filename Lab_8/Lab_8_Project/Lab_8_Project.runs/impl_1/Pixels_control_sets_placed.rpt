@@ -1,0 +1,74 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date         : Thu Oct 25 16:13:13 2018
+| Host         : hpl-fedora running 64-bit Fedora release 28 (Twenty Eight)
+| Command      : report_control_sets -verbose -file Pixels_control_sets_placed.rpt
+| Design       : Pixels
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|     12 |            1 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              24 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             100 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------+--------------------------+------------------+----------------+
+|  Clock Signal  |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+--------------------------+--------------------------+------------------+----------------+
+|  frame_rate    |                          |                          |                1 |              2 |
+|  clk_IBUF_BUFG |                          | clr_IBUF                 |                1 |              4 |
+|  frame_rate    | U3/ball_x_min[6]_i_2_n_0 | U3/ball_x_min[6]_i_1_n_0 |                2 |             12 |
+|  U1/CLK        |                          | U3/hc[9]_i_1_n_0         |                5 |             20 |
+|  U1/CLK        | U3/hc[9]_i_1_n_0         | U3/vc                    |                6 |             20 |
+|  frame_rate    | U3/ball_x_max            | U3/ball_x_min[9]_i_1_n_0 |                8 |             28 |
+|  frame_rate    | U3/ball_y_max            | U3/ball_y_min0           |                8 |             40 |
++----------------+--------------------------+--------------------------+------------------+----------------+
+
+

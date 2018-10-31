@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1536698531">
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="simpleNAND_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="simpleNAND_drc_routed.rpx"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="simpleNAND_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="simpleNAND_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DCP" Name="simpleNAND_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="simpleNAND_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="simpleNAND_routed_error.dcp"/>
+  <File Type="ROUTE-PWR" Name="simpleNAND_power_routed.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="simpleNAND_physopt.dcp"/>
+  <File Type="ROUTE-DRC-PB" Name="simpleNAND_drc_routed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="simpleNAND_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-DRC" Name="simpleNAND_drc_routed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="simpleNAND_utilization_placed.pb"/>
+  <File Type="OPT-DRC" Name="simpleNAND_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="simpleNAND_opt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="simpleNAND_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="simpleNAND_control_sets_placed.rpt"/>
+  <File Type="REPORTS-TCL" Name="simpleNAND_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="simpleNAND_bus_skew_routed.rpx"/>
+  <File Type="PA-DCP" Name="simpleNAND.dcp"/>
+  <File Type="PLACE-DCP" Name="simpleNAND_placed.dcp"/>
+  <File Type="PA-TCL" Name="simpleNAND.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="simpleNAND_bus_skew_routed.pb"/>
+  <File Type="OPT-HWDEF" Name="simpleNAND.hwdef"/>
+  <File Type="BG-BIT" Name="simpleNAND.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="simpleNAND_route_status.pb"/>
+  <File Type="BG-BIN" Name="simpleNAND.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="simpleNAND_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="simpleNAND.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="simpleNAND_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="simpleNAND.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="simpleNAND_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="simpleNAND.nky"/>
+  <File Type="BITSTR-BMM" Name="simpleNAND_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="simpleNAND_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="simpleNAND.drc"/>
+  <File Type="PLACE-IO" Name="simpleNAND_io_placed.rpt"/>
+  <File Type="BITSTR-MMI" Name="simpleNAND.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="simpleNAND_bus_skew_routed.rpt"/>
+  <File Type="RDI-RDI" Name="simpleNAND.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="simpleNAND.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="simpleNAND.sysdef"/>
+  <File Type="PLACE-UTIL" Name="simpleNAND_utilization_placed.rpt"/>
+  <File Type="BITSTR-LTX" Name="simpleNAND.ltx"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="simpleNAND_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="simpleNAND_postroute_physopt.dcp"/>
+  <File Type="ROUTE-STATUS" Name="simpleNAND_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="simpleNAND_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="simpleNAND_power_summary_routed.pb"/>
+  <File Type="PWROPT-DCP" Name="simpleNAND_pwropt.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../simpleNAND.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="simpleNAND"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

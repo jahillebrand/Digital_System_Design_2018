@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jul 26 2018
+18:27:14
+/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Lab_2_Project/Lab_2_Project.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_full.v,1536871035,verilog,,/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_half.v,,Add_full,,,,,,,,
+/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_half.v,1297826226,verilog,,/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_rca_16.v,,Add_half,,,,,,,,
+/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_rca_16.v,1297828890,verilog,,/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_rca_4.v,,Add_rca_16,,,,,,,,
+/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_rca_16_TestBench.v,1536873858,verilog,,,,Add_rca_16_TestBench,,,,,,,,
+/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_rca_4.v,1536873513,verilog,,/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_2/Source_Files/Source templates/Add_rca_16_TestBench.v,,Add_rca_4,,,,,,,,

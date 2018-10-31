@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Oct 25 16:14:33 2018
+# Process ID: 16702
+# Current directory: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.runs/impl_1
+# Command line: vivado -log Pixels.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Pixels.tcl -notrace
+# Log file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.runs/impl_1/Pixels.vdi
+# Journal file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Pixels.tcl -notrace

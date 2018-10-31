@@ -1,0 +1,323 @@
+
+*** Running vivado
+    with args -log Pixels.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pixels.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Pixels.tcl -notrace
+Command: synth_design -top Pixels -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13291 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1438.820 ; gain = 68.887 ; free physical = 1390 ; free virtual = 20706
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Pixels' [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.srcs/sources_1/new/Pixels.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clockdiv' [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.srcs/sources_1/new/clockdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clockdiv' (1#1) [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.srcs/sources_1/new/clockdiv.v:23]
+WARNING: [Synth 8-350] instance 'U1' of module 'clockdiv' requires 4 connections, but only 3 given [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.srcs/sources_1/new/Pixels.v:21]
+INFO: [Synth 8-6157] synthesizing module 'vga640x480' [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:4]
+	Parameter hpixels bound to: 10'b1100100000 
+	Parameter vlines bound to: 10'b1000001001 
+	Parameter hpulse bound to: 7'b1100000 
+	Parameter vpulse bound to: 2'b10 
+	Parameter hbp bound to: 8'b10010000 
+	Parameter hfp bound to: 10'b1100010000 
+	Parameter vbp bound to: 5'b11111 
+	Parameter vfp bound to: 10'b0111111111 
+WARNING: [Synth 8-567] referenced signal 'stop' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:257]
+WARNING: [Synth 8-567] referenced signal 'ball_x_min' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:257]
+WARNING: [Synth 8-567] referenced signal 'ball_x_max' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:257]
+WARNING: [Synth 8-567] referenced signal 'ball_y_min' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:257]
+WARNING: [Synth 8-567] referenced signal 'ball_y_max' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:257]
+INFO: [Synth 8-6155] done synthesizing module 'vga640x480' (2#1) [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Pixels' (3#1) [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.srcs/sources_1/new/Pixels.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1483.445 ; gain = 113.512 ; free physical = 1401 ; free virtual = 20718
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1483.445 ; gain = 113.512 ; free physical = 1402 ; free virtual = 20718
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1483.445 ; gain = 113.512 ; free physical = 1402 ; free virtual = 20718
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Pixels_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Pixels_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1802.781 ; gain = 0.000 ; free physical = 1166 ; free virtual = 20483
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1237 ; free virtual = 20554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1237 ; free virtual = 20554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1238 ; free virtual = 20556
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:77]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:91]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:77]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/vga640x480.v:91]
+INFO: [Synth 8-5544] ROM "ball_x_min" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ball_x_max" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1228 ; free virtual = 20546
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  15 Input     10 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  14 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  15 Input     10 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  14 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1210 ; free virtual = 20530
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1088 ; free virtual = 20408
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1802.781 ; gain = 432.848 ; free physical = 1088 ; free virtual = 20408
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    21|
+|3     |LUT1   |    11|
+|4     |LUT2   |    64|
+|5     |LUT3   |    26|
+|6     |LUT4   |    67|
+|7     |LUT5   |    24|
+|8     |LUT6   |    91|
+|9     |FDRE   |    48|
+|10    |FDSE   |    15|
+|11    |IBUF   |     6|
+|12    |OBUF   |    10|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   385|
+|2     |  U1     |clockdiv   |     4|
+|3     |  U3     |vga640x480 |   363|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.789 ; gain = 440.855 ; free physical = 1085 ; free virtual = 20405
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1810.789 ; gain = 121.520 ; free physical = 1140 ; free virtual = 20460
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1810.797 ; gain = 440.855 ; free physical = 1140 ; free virtual = 20460
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1810.797 ; gain = 440.977 ; free physical = 1137 ; free virtual = 20457
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/exposedbuckle48/Documents/Semester_5/DSD/Lab_8/Lab_8_Project/Lab_8_Project.runs/synth_1/Pixels.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Pixels_utilization_synth.rpt -pb Pixels_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1834.801 ; gain = 0.000 ; free physical = 1136 ; free virtual = 20457
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 25 16:12:15 2018...

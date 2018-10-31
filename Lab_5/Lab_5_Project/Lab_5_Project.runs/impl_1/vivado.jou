@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Sep 27 16:14:10 2018
+# Process ID: 15778
+# Current directory: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_5/Lab_5_Project/Lab_5_Project.runs/impl_1
+# Command line: vivado -log Double_Digit_Counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Double_Digit_Counter.tcl -notrace
+# Log file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_5/Lab_5_Project/Lab_5_Project.runs/impl_1/Double_Digit_Counter.vdi
+# Journal file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_5/Lab_5_Project/Lab_5_Project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Double_Digit_Counter.tcl -notrace

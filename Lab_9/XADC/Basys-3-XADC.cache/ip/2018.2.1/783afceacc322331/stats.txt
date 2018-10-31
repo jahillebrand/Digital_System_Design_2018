@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Tue Oct 30 20:57:55 UTC 2018
+VLNV: xilinx.com:ip:xadc_wiz:3.3
+SynthRuntime: 33

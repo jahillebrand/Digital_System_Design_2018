@@ -1,0 +1,9 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+time=     5.0ns, a=1, b=1, y=x
+time=    15.0ns, a=0, b=1, y=0
+time=    65.0ns, a=1, b=1, y=1
+time=   145.0ns, a=0, b=1, y=0
+time=   295.0ns, a=1, b=1, y=1
+time=   495.0ns, a=1, b=0, y=0
+time=   745.0ns, a=1, b=1, y=1
