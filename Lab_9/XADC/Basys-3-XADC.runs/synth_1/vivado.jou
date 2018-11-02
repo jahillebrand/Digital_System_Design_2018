@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Oct 27 22:18:14 2018
-# Process ID: 5148
-# Current directory: C:/XADC/Basys-3-XADC.runs/synth_1
-# Command line: vivado.exe -log XADCdemo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source XADCdemo.tcl
-# Log file: C:/XADC/Basys-3-XADC.runs/synth_1/XADCdemo.vds
-# Journal file: C:/XADC/Basys-3-XADC.runs/synth_1\vivado.jou
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Nov  1 15:31:15 2018
+# Process ID: 11080
+# Current directory: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_9/XADC/Basys-3-XADC.runs/synth_1
+# Command line: vivado -log XADCdemo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source XADCdemo.tcl
+# Log file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_9/XADC/Basys-3-XADC.runs/synth_1/XADCdemo.vds
+# Journal file: /home/exposedbuckle48/Documents/Semester_5/DSD/Lab_9/XADC/Basys-3-XADC.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source XADCdemo.tcl -notrace

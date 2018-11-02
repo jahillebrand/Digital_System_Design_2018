@@ -58,7 +58,7 @@ module XADCdemo(
     xadc_wiz_2  XLXI_7 (
         .daddr_in(Address_in), //addresses can be found in the artix 7 XADC user guide DRP register space
         .dclk_in(CLK100MHZ), 
-        .den_in(), 
+        .den_in(enable), 
         .di_in(0), 
         .dwe_in(0), 
         .busy_out(),                    
@@ -73,11 +73,11 @@ module XADCdemo(
         .vn_in(vn_in), 
         .vp_in(vp_in), 
         .alarm_out(), 
-        .do_out(), 
+        .do_out(data), 
         //.reset_in(),
-        .eoc_out(),
+        .eoc_out(enable),
         .channel_out(),
-        .drdy_out()
+        .drdy_out(ready)
     );
     
     //led visual dmm              

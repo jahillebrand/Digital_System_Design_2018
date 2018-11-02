@@ -50,13 +50,13 @@ module bin2dec (
                 //operators, meaning that the data will be
                 //returned as binary number. Examples as below
                 
-                  data <= din;
-                // data <= ( din * 1000) / 65536;
+                 // data <= din;
+               // data <= ( din * 1000) / 65536;
                 // data <= ({4'b0, din} * 1000) >> 16;
                 // data <= ( din * 1000) >> 16;
                
                 //data <= din;
-               // data <= ({16'b0, din} * 1000) >> 16;
+               data <= ({16'b0, din} * 1000) >> 16;
                
                 byte_count <= 0;
             end

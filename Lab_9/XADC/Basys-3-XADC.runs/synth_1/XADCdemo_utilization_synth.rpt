@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Oct 27 22:19:05 2018
-| Host         : C-13142 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date         : Thu Nov  1 15:31:57 2018
+| Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command      : report_utilization -file XADCdemo_utilization_synth.rpt -pb XADCdemo_utilization_synth.pb
 | Design       : XADCdemo
 | Device       : 7a35tcpg236-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  389 |     0 |     20800 |  1.87 |
-|   LUT as Logic          |  389 |     0 |     20800 |  1.87 |
+| Slice LUTs*             |  112 |     0 |     20800 |  0.54 |
+|   LUT as Logic          |  112 |     0 |     20800 |  0.54 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  165 |     0 |     41600 |  0.40 |
-|   Register as Flip Flop |  165 |     0 |     41600 |  0.40 |
+| Slice Registers         |  163 |     0 |     41600 |  0.39 |
+|   Register as Flip Flop |  163 |     0 |     41600 |  0.39 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 165   |          Yes |       Reset |            - |
+| 163   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,16 +150,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  284 |                 LUT |
-| FDRE     |  165 |        Flop & Latch |
-| CARRY4   |   96 |          CarryLogic |
+| FDRE     |  163 |        Flop & Latch |
 | LUT5     |   39 |                 LUT |
-| LUT6     |   31 |                 LUT |
-| LUT3     |   30 |                 LUT |
+| LUT3     |   29 |                 LUT |
 | OBUF     |   28 |                  IO |
-| LUT1     |   23 |                 LUT |
+| LUT6     |   28 |                 LUT |
 | LUT4     |   20 |                 LUT |
+| LUT2     |   18 |                 LUT |
+| CARRY4   |   16 |          CarryLogic |
 | IBUF     |   13 |                  IO |
+| LUT1     |    3 |                 LUT |
 | DSP48E1  |    1 |    Block Arithmetic |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
@@ -171,7 +171,7 @@ Table of Contents
 +------------+------+
 |  Ref Name  | Used |
 +------------+------+
-| xadc_wiz_1 |    1 |
+| xadc_wiz_2 |    1 |
 +------------+------+
 
 
