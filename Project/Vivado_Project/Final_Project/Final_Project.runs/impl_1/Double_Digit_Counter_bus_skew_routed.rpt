@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date         : Mon Nov 12 18:48:49 2018
+| Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
+| Command      : report_bus_skew -warn_on_violation -file Double_Digit_Counter_bus_skew_routed.rpt -pb Double_Digit_Counter_bus_skew_routed.pb -rpx Double_Digit_Counter_bus_skew_routed.rpx
+| Design       : Double_Digit_Counter
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

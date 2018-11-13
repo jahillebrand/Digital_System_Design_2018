@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov  6 15:38:58 2018
+# Process ID: 13136
+# Current directory: C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/Stepper_Motor_Full_Step
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10260 C:\Teaching_Materials\CEE-325 Fall 2018\Source\stepper\Stepper_Motor_Full_Step\Stepper_Motor_Full_Step.xpr
+# Log file: C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/Stepper_Motor_Full_Step/vivado.log
+# Journal file: C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/Stepper_Motor_Full_Step\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Teaching_Materials/CEE-325 Fall 2017/Source/stepper/Stepper_Motor_Full_Step' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Stepper_Motor_Full_Step.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 780.367 ; gain = 64.930
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  6 15:41:14 2018...

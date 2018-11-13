@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov  6 15:41:35 2018
+# Process ID: 12744
+# Current directory: C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/D2L/Stepper_Motor_Full_Step
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1300 C:\Teaching_Materials\CEE-325 Fall 2018\Source\stepper\D2L\Stepper_Motor_Full_Step\Stepper_Motor_Full_Step.xpr
+# Log file: C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/D2L/Stepper_Motor_Full_Step/vivado.log
+# Journal file: C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/D2L/Stepper_Motor_Full_Step\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Teaching_Materials/CEE-325 Fall 2018/Source/stepper/D2L/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
