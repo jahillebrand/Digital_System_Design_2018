@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Mon Nov 12 18:48:27 2018
+| Date         : Wed Nov 14 12:05:55 2018
 | Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command      : report_drc -file Double_Digit_Counter_drc_opted.rpt -pb Double_Digit_Counter_drc_opted.pb -rpx Double_Digit_Counter_drc_opted.rpx
 | Design       : Double_Digit_Counter
@@ -49,16 +49,16 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT U1/BCD[11]_i_3 is driving clock pin of 12 cells. This could lead to large hold time violations. First few involved cells are:
+A LUT U1/BCD[15]_i_3 is driving clock pin of 16 cells. This could lead to large hold time violations. First few involved cells are:
     BCD_reg[0] {FDCE}
     BCD_reg[10] {FDCE}
     BCD_reg[11] {FDCE}
+    BCD_reg[12] {FDCE}
+    BCD_reg[13] {FDCE}
+    BCD_reg[14] {FDCE}
+    BCD_reg[15] {FDCE}
     BCD_reg[1] {FDCE}
     BCD_reg[2] {FDCE}
-    BCD_reg[3] {FDCE}
-    BCD_reg[4] {FDCE}
-    BCD_reg[5] {FDCE}
-    BCD_reg[6] {FDCE}
 
 Related violations: <none>
 

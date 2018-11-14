@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date             : Mon Nov 12 18:48:48 2018
+| Date             : Wed Nov 14 12:06:16 2018
 | Host             : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command          : report_power -file Double_Digit_Counter_power_routed.rpt -pb Double_Digit_Counter_power_summary_routed.pb -rpx Double_Digit_Counter_power_routed.rpx
 | Design           : Double_Digit_Counter
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 26.290 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 25.804                           |
-| Device Static (W)        | 0.486                            |
-| Effective TJA (C/W)      | 5.0                              |
-| Max Ambient (C)          | 0.0                              |
-| Junction Temperature (C) | 125.0                            |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 10.062       |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 9.921        |
+| Device Static (W)        | 0.141        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 34.7         |
+| Junction Temperature (C) | 75.3         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.270 |      112 |       --- |             --- |
-|   LUT as Logic |     0.223 |       37 |     20800 |            0.18 |
-|   Register     |     0.022 |       53 |     41600 |            0.13 |
-|   CARRY4       |     0.019 |        8 |      8150 |            0.10 |
+| Slice Logic    |     0.198 |      135 |       --- |             --- |
+|   LUT as Logic |     0.152 |       49 |     20800 |            0.24 |
+|   CARRY4       |     0.021 |        8 |      8150 |            0.10 |
+|   Register     |     0.019 |       59 |     41600 |            0.14 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.398 |       90 |       --- |             --- |
-| I/O            |    25.135 |       15 |       106 |           14.15 |
-| Static Power   |     0.486 |          |           |                 |
-| Total          |    26.290 |          |           |                 |
+| Signals        |     0.252 |      108 |       --- |             --- |
+| I/O            |     9.471 |       15 |       106 |           14.15 |
+| Static Power   |     0.141 |          |           |                 |
+| Total          |    10.062 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,16 +71,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.018 |       0.677 |      0.341 |
-| Vccaux    |       1.800 |     0.974 |       0.921 |      0.053 |
-| Vcco33    |       3.300 |     7.113 |       7.112 |      0.001 |
+| Vccint    |       1.000 |     0.524 |       0.458 |      0.066 |
+| Vccaux    |       1.800 |     0.366 |       0.347 |      0.019 |
+| Vcco33    |       3.300 |     2.679 |       2.678 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.010 |       0.000 |      0.010 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -138,8 +138,8 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Double_Digit_Counter |    25.804 |
-|   U1                 |     0.121 |
+| Double_Digit_Counter |     9.921 |
+|   U1                 |     0.133 |
 +----------------------+-----------+
 
 

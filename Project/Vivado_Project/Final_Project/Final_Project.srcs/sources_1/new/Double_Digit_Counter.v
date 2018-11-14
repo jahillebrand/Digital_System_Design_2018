@@ -29,7 +29,7 @@ module Double_Digit_Counter(
     );
 
     reg [12:1] DIVIDER;
-    reg [11:0] BCD;
+    reg [15:0] BCD;
     reg [3:0] DECODE_BCD;
     //reg [3:0] DEBOUNCE_count;
 
@@ -59,27 +59,40 @@ module Double_Digit_Counter(
    always @(negedge BUTTON_clk or posedge reset)
     begin
         if(reset)
-            BCD <= 12'h00;
+            BCD <= 16'h000;
         else
             begin
-                //BCD <= 8'h00;
-                if(BCD[3:0] == 4'h9)
-                    begin
-                        BCD[3:0] <= 4'h0;
-                        BCD[7:4] <= BCD[7:4] + 1;
-                    end
-                if(BCD[7:4] == 4'h9)
-                    begin
-                        BCD[7:4] <= 4'h0;
-                        BCD[11:8] <= BCD[11:8] + 1;
+                    //BCD <= 16'h000;
+                    if(BCD[3:0] == 4'h9)
+                        begin
+                        if (BCD[7:4] == 4'h9)
+                            if (BCD[11:8] == 4'h9)
+                                if (BCD[15:12] ==4'h9)
+                                    BCD <= 16'h0000;
+                                else
+                                    begin
+                                        BCD[15:12] = BCD[15:12] + 1;
+                                        BCD[11:0] = 12'h000;
+                                    end
+                            else
+                                begin
+                                    BCD[11:8] <= BCD[11:8] + 1;
+                                    BCD[7:0] <= 8'h00;
+                                end
+                        else
+                            begin
+                                BCD[7:4] = BCD[7:4] + 1;
+                                BCD[3:0] = 4'h0;
+                            end
                     end
                 else
-                    BCD[3:0] <= BCD[3:0] +1;
-                    if(BCD == 12'h99)    
-                        BCD <= 12'h00;
+                    begin
+                    BCD[3:0] <= BCD[3:0] + 1;
+                    if(BCD == 15'h9999)    
+                        BCD <= 15'h0000;
                     end
-             end
-
+              end
+      end
 
     //Enable the LED Display
     always @(negedge SCAN_clk or posedge reset)
@@ -87,7 +100,7 @@ module Double_Digit_Counter(
             if(reset)
                 ENABLE <= 4'b1110;
             else
-                ENABLE <= {4'b111,ENABLE[1],ENABLE[2],ENABLE[3]};
+                ENABLE <= {4'b11,ENABLE[3:1],ENABLE[4]};
         end
 
     //Data display multiplexer
@@ -96,7 +109,9 @@ module Double_Digit_Counter(
             case (ENABLE)
                 4'b1110 : DECODE_BCD <= BCD[3:0];
                 4'b1101 : DECODE_BCD <= BCD[7:4];
-                default : DECODE_BCD <= BCD[11:8];
+                4'b1011 : DECODE_BCD <= BCD[11:8];
+                4'b0111 : DECODE_BCD <= BCD[15:12];
+                default : DECODE_BCD <= BCD[15:12];
             endcase
         end
 

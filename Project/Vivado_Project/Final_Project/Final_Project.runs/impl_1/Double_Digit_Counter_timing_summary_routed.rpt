@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Mon Nov 12 18:48:48 2018
+| Date         : Wed Nov 14 12:06:16 2018
 | Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command      : report_timing_summary -max_paths 10 -file Double_Digit_Counter_timing_summary_routed.rpt -pb Double_Digit_Counter_timing_summary_routed.pb -rpx Double_Digit_Counter_timing_summary_routed.rpx -warn_on_violation
 | Design       : Double_Digit_Counter
@@ -54,15 +54,15 @@ Table of Contents
 --------------------
  There are 39 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: DIVIDER_reg[12]/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: DIVIDER_reg[12]/Q (HIGH)
 
- There are 12 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[4]/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[4]/Q (HIGH)
 
- There are 12 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[5]/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[5]/Q (HIGH)
 
- There are 12 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[6]/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[6]/Q (HIGH)
 
- There are 12 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[7]/Q (HIGH)
+ There are 16 register/latch pins with no clock driven by root clock pin: U1/FSM_onehot_state_reg_reg[7]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -77,7 +77,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 107 pins that are not constrained for maximum delay. (HIGH)
+ There are 123 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -91,7 +91,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 9 ports with no output delay specified. (HIGH)
+ There are 11 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
