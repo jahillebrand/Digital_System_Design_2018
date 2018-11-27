@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer: 
+// Company: UW-Stout
+// Engineer: Jacob Hillebrand
 //
 // Create Date: 09/25/2018 01:44:55 PM
-// Design Name:
+// Design Name: 24-hr Clock
 // Module Name: Double_Digit_Counter
-// Project Name:
+// Project Name: DSD_FINAL_PROJECT
 // Target Devices:
 // Tool Versions:
 // Description:
@@ -23,19 +23,24 @@
 module Double_Digit_Counter(
     input clk,
     input reset,
-    input BUTTON,
+    input HB_INC,
+    input MB_INC,
+    input EN_HM,
+    input EN_SEC,
     output reg [4:1] ENABLE,
     output reg [7:0] SEGMENT
     );
 
     reg [12:1] DIVIDER;
-    reg [15:0] BCD;
+    reg [23:0] BCD;
     reg [3:0] DECODE_BCD;
-    //reg [3:0] DEBOUNCE_count;
+    integer STATE = 1'b0;
 
     wire SCAN_clk;
-    wire BUTTON_clk;
-
+    wire HB_INC_clk;
+    wire MB_INC_clk;
+    wire clk_wire;
+    
     //Controls the value of reg 'divider'; if 'reset' is pressed
     //divider is set to zero, and otherwise is incremental on the
     //clock tick.
@@ -47,28 +52,52 @@ module Double_Digit_Counter(
                 DIVIDER <= DIVIDER + 1;
         end
    assign SCAN_clk = DIVIDER[12];
+   //Assign clk to wire to avoid routing issue?????
+
 
    // finite state machine for the debouncing circuit//??????????????????????????????
-   db_fsm U1 (.clk(clk), .reset(reset), .sw(BUTTON), .db(BUTTON_clk));
+   db_fsm U1 (.clk(clk), .reset(reset), .sw(HB_INC), .db(HB_INC_clk));
+   db_fsm U2 (.clk(clk), .reset(reset), .sw(MB_INC), .db(MB_INC_clk));
+
+
+    // Controller for the hour/min vs seconds on the display
+    always @(posedge EN_HM, posedge EN_SEC)
+        begin
+            if (EN_HM)
+                STATE <= 1'b0;
+            else
+                STATE <= 1'b1;
+        end
 
    // 00 to 99 up counter
 
    //Controls the value of bcd; if 'reset' is pressed, the value
    //is set to zero. Otherwise, the value is incremented on
    //button_clk
-   always @(negedge BUTTON_clk or posedge reset)
+   always @(negedge HB_INC_clk or posedge reset)
     begin
         if(reset)
-            BCD <= 16'h000;
+            BCD <= 23'h00000;
         else
             begin
-                    //BCD <= 16'h000;
                     if(BCD[3:0] == 4'h9)
                         begin
                         if (BCD[7:4] == 4'h9)
                             if (BCD[11:8] == 4'h9)
                                 if (BCD[15:12] ==4'h9)
-                                    BCD <= 16'h0000;
+                                    if (BCD[19:16] == 4'h9)
+                                        if (BCD[23:20] == 4'h9)
+                                            BCD <= 16'h0000;
+                                        else
+                                            begin
+                                                BCD[23:20] = BCD[23:20] + 1;
+                                                BCD[19:0] = 20'h00000;
+                                            end
+                                    else
+                                        begin
+                                            BCD[19:16] = BCD[19:16] +1;
+                                            BCD[15:0] = 16'h0000;
+                                        end   
                                 else
                                     begin
                                         BCD[15:12] = BCD[15:12] + 1;
@@ -88,30 +117,43 @@ module Double_Digit_Counter(
                 else
                     begin
                     BCD[3:0] <= BCD[3:0] + 1;
-                    if(BCD == 15'h9999)    
-                        BCD <= 15'h0000;
+                    if(BCD == 23'h999999)    
+                        BCD <= 23'h000000;
                     end
               end
       end
 
-    //Enable the LED Display
+
+    // Enable the LED Display
+    // Based on the STATE variable, the proper displays will be enabled
     always @(negedge SCAN_clk or posedge reset)
         begin
             if(reset)
                 ENABLE <= 4'b1110;
-            else
+            else if (STATE == 1'b0)
                 ENABLE <= {4'b11,ENABLE[3:1],ENABLE[4]};
+            else
+                ENABLE <= {4'b11,ENABLE[1],ENABLE[2]};
         end
 
+
     //Data display multiplexer
+    // If the display is set to hours/minutes (ie. STATE == 0) the 
+    // display will choose to display the proper times
     always @(ENABLE or BCD)
         begin
             case (ENABLE)
-                4'b1110 : DECODE_BCD <= BCD[3:0];
-                4'b1101 : DECODE_BCD <= BCD[7:4];
-                4'b1011 : DECODE_BCD <= BCD[11:8];
-                4'b0111 : DECODE_BCD <= BCD[15:12];
-                default : DECODE_BCD <= BCD[15:12];
+                4'b1110 : if (STATE == 1'b0)
+                              DECODE_BCD <= BCD[11:8];
+                          else 
+                              DECODE_BCD <= BCD[3:0];
+                4'b1101 : if(STATE == 1'b0)
+                              DECODE_BCD <= BCD[15:12];
+                          else
+                              DECODE_BCD <= BCD[7:4];
+                4'b1011 : DECODE_BCD <= BCD[19:16];
+                4'b0111 : DECODE_BCD <= BCD[23:20];
+                default : DECODE_BCD <= BCD[23:20];
             endcase
         end
 
