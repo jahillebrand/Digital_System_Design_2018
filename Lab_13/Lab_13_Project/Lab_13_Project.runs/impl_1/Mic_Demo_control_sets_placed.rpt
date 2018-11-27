@@ -1,0 +1,80 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date         : Tue Nov 27 16:00:01 2018
+| Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
+| Command      : report_control_sets -verbose -file Mic_Demo_control_sets_placed.rpt
+| Design       : Mic_Demo
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            9 |
+|      8 |            1 |
+|     10 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              38 |            7 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              38 |            5 |
+| Yes          | Yes                   | No                     |              16 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------------+------------------+------------------+----------------+
+|   Clock Signal  |      Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------+------------------------+------------------+------------------+----------------+
+|  sclk_OBUF_BUFG | U1/CS_i_1_n_0          | reset_IBUF       |                1 |              2 |
+|  U1/CLK         | U1/E[0]                | U1/SR[0]         |                1 |              2 |
+|  U1/CLK         | U1/E[1]                | U1/SR[1]         |                1 |              2 |
+|  U1/CLK         | U1/E[2]                | U1/SR[2]         |                1 |              2 |
+|  U1/CLK         | U1/E[3]                | U1/SR[3]         |                1 |              2 |
+|  U1/CLK         | U1/E[4]                | U1/SR[4]         |                1 |              2 |
+|  U1/CLK         | U1/E[5]                | U1/SR[5]         |                1 |              2 |
+|  U1/CLK         | U1/E[6]                | U1/SR[6]         |                1 |              2 |
+|  U1/CLK         | U1/E[7]                | U1/SR[7]         |                1 |              2 |
+|  clk_IBUF_BUFG  |                        | reset_IBUF       |                1 |              8 |
+|  sclk_OBUF_BUFG | U1/count[4]_i_1_n_0    | reset_IBUF       |                1 |             10 |
+|  sclk_OBUF_BUFG | U1/digital[11]_i_1_n_0 | reset_IBUF       |                3 |             26 |
+|  sclk_OBUF_BUFG |                        | reset_IBUF       |                6 |             30 |
++-----------------+------------------------+------------------+------------------+----------------+
+
+

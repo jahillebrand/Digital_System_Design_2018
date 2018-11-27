@@ -24,70 +24,85 @@ module serialCom(
     input clk,
     input reset,
     input sdata,
-    input switch,
-    output done,
-    output CS,
-    output reg [11:0] digital
+    output reg [11:0] digital,
+    output reg CS,
+    output reg done,
+    input switch
     );
     
+    
 // delcaration of states
-localparam [1:0]
-    idle      = 2'b00,
-    shift_in  = 2'b01,  
-    sync_data = 2'b10;
-    
-reg [3:0] ShiftCounter;
+parameter idle = 2'b01,
+            shift_in = 2'b10,
+            sync_data = 2'b11;
 
-reg nCS;
-assign CS = nCS;
-reg DONE;
-reg START;
-
-reg [1:0] state_reg, state_next;
-
-    
+// declare other necessary regs
+reg start;
+reg [15:4] temp;
+reg [2:0] state;
+reg [4:0] count;
+   
 //state register
-always @(negedge clk, posedge reset)
+always @(posedge clk or posedge reset)
+begin
     if(reset)
-        state_reg <= idle;
+        begin
+            state <= idle;
+            start <= 1'b0;
+            count <= 4'b0000;
+            CS <= 1'b1;
+            temp <= 12'b000000000000;
+            digital <= 12'b000000000000;
+            done <= 1'b1;
+        end
     else
-        state_reg <= state_next;
-        
-always @(negedge clk)
     begin
-        state_next = state_reg;
-        case (state_reg)
+        case (state)
             idle:
-                begin
-                if (START == 1'b1)
-                    begin
-                    state_next <= shift_in;
-                    end
+                if(start == 1'b1 && count < 16)
+                    state <= shift_in;
                 else
                     begin
-                        nCS  <= 1'b1;
-                        DONE <= 1'b1;
+                        done <= 1'b1;
+                        start <= 1'b1;
+                        count <= 4'b0001;
+                        CS <= 1'b1;
+                        temp <= 12'b000000000000;
+                        digital <= 12'b000000000000;
+                        state <= idle; //Maybe don't leave this at idle?
                     end
-                end
             shift_in:
-                begin
-                if (ShiftCounter == 4'h15)
-                    begin
-                        state_next <= sync_data;
-                    end
+                if (start == 1'b1 && count == 16)
+                    state = sync_data;
                 else
                     begin
-                        nCS <= 1'b0;
-                        DONE <= 1'b0;
+                        CS <= 1'b0;
+                        done <= 1'b0;
+                        if (count > 3)
+                            begin
+                                if(switch)
+                                    begin
+                                        temp[19-count] <= sdata;
+                                    end
+                            end
+                            count <= count +1'b1;
+                            state <= shift_in;
                     end
-                end
             sync_data:
-                begin
-                
-                end
-            default: state_next = idle;
+                if (start == 1'b0)
+                    state <= idle;
+                else 
+                    begin
+                        digital [11:0] <= temp [15:4];
+                        CS <= 1'b1;
+                        done <= 1'b0;
+                        start <= 1'b0;
+                        state = sync_data;
+                    end
+            default: state = idle;
         endcase
     
     end
+end
         
 endmodule
