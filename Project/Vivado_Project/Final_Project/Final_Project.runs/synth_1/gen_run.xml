@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542845128">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1543439103">
   <File Type="VDS-TIMING-PB" Name="Double_Digit_Counter_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Double_Digit_Counter_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Double_Digit_Counter.dcp"/>

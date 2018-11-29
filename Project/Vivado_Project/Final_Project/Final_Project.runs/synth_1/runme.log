@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5189 
+INFO: Helper process launched with PID 10666 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1421.727 ; gain = 67.855 ; free physical = 4696 ; free virtual = 22673
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1421.730 ; gain = 67.852 ; free physical = 1139 ; free virtual = 20190
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Double_Digit_Counter' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:23]
 INFO: [Synth 8-6157] synthesizing module 'db_fsm' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/db_fsm.v:28]
@@ -31,10 +31,10 @@ INFO: [Synth 8-6157] synthesizing module 'db_fsm' [/home/exposedbuckle48/Documen
 	Parameter N bound to: 19 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/db_fsm.v:82]
 INFO: [Synth 8-6155] done synthesizing module 'db_fsm' (1#1) [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/db_fsm.v:28]
-WARNING: [Synth 8-567] referenced signal 'STATE' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:144]
+WARNING: [Synth 8-567] referenced signal 'STATE' should be on the sensitivity list [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:143]
 INFO: [Synth 8-6155] done synthesizing module 'Double_Digit_Counter' (2#1) [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1467.352 ; gain = 113.480 ; free physical = 4706 ; free virtual = 22683
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1467.355 ; gain = 113.477 ; free physical = 1149 ; free virtual = 20200
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -47,10 +47,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1467.352 ; gain = 113.480 ; free physical = 4705 ; free virtual = 22681
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1467.355 ; gain = 113.477 ; free physical = 1160 ; free virtual = 20211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1467.352 ; gain = 113.480 ; free physical = 4705 ; free virtual = 22681
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1467.355 ; gain = 113.477 ; free physical = 1160 ; free virtual = 20211
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -66,22 +66,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1785.688 ; gain = 0.000 ; free physical = 4477 ; free virtual = 22454
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1785.691 ; gain = 0.000 ; free physical = 914 ; free virtual = 19965
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4547 ; free virtual = 22524
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 982 ; free virtual = 20034
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4547 ; free virtual = 22524
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 982 ; free virtual = 20034
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4549 ; free virtual = 22526
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 984 ; free virtual = 20036
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'db_fsm'
 INFO: [Synth 8-5544] ROM "db" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -105,7 +105,7 @@ INFO: [Synth 8-5544] ROM "BCD" won't be mapped to Block RAM because address size
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'db_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4539 ; free virtual = 22516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 971 ; free virtual = 20024
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -120,11 +120,11 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 6     
 +---Registers : 
-	               32 Bit    Registers := 1     
 	               24 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     24 Bit        Muxes := 23    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 21    
 	   8 Input      8 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 14    
 	   2 Input      4 Bit        Muxes := 3     
@@ -143,11 +143,11 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 6     
 +---Registers : 
-	               32 Bit    Registers := 1     
 	               24 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     24 Bit        Muxes := 23    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 21    
 	   2 Input      4 Bit        Muxes := 3     
 	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
@@ -174,40 +174,163 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'STATE_reg[1]' (FDC) to 'STATE_reg[2]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[2]' (FDC) to 'STATE_reg[3]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[3]' (FDC) to 'STATE_reg[4]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[4]' (FDC) to 'STATE_reg[5]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[5]' (FDC) to 'STATE_reg[6]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[6]' (FDC) to 'STATE_reg[7]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[7]' (FDC) to 'STATE_reg[8]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[8]' (FDC) to 'STATE_reg[9]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[9]' (FDC) to 'STATE_reg[10]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[10]' (FDC) to 'STATE_reg[11]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[11]' (FDC) to 'STATE_reg[12]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[12]' (FDC) to 'STATE_reg[13]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[13]' (FDC) to 'STATE_reg[14]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[14]' (FDC) to 'STATE_reg[15]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[15]' (FDC) to 'STATE_reg[16]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[16]' (FDC) to 'STATE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[17]' (FDC) to 'STATE_reg[18]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[18]' (FDC) to 'STATE_reg[19]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[19]' (FDC) to 'STATE_reg[20]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[20]' (FDC) to 'STATE_reg[21]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[21]' (FDC) to 'STATE_reg[22]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[22]' (FDC) to 'STATE_reg[23]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[23]' (FDC) to 'STATE_reg[24]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[24]' (FDC) to 'STATE_reg[25]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[25]' (FDC) to 'STATE_reg[26]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[26]' (FDC) to 'STATE_reg[27]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[27]' (FDC) to 'STATE_reg[28]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[28]' (FDC) to 'STATE_reg[29]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[29]' (FDC) to 'STATE_reg[30]'
-INFO: [Synth 8-3886] merging instance 'STATE_reg[30]' (FDC) to 'STATE_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\STATE_reg[31] )
 WARNING: [Synth 8-3332] Sequential element (STATE_reg[31]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[31]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[30]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[30]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[29]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[29]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[28]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[28]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[27]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[27]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[26]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[26]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[25]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[25]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[24]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[24]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[23]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[23]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[22]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[22]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[21]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[21]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[20]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[20]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[19]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[19]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[18]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[18]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[17]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[17]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[16]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[16]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[15]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[15]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[14]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[14]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[13]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[13]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[12]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[12]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[11]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[11]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[10]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[10]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[9]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[9]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[8]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[8]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[7]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[7]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[6]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[6]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[5]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[5]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[4]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[4]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[3]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[3]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[2]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[2]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[1]) is unused and will be removed from module Double_Digit_Counter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'STATE_reg[1]/Q' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[31]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[30]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[29]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[28]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[27]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[26]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[25]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[24]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[23]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[22]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[21]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[20]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[19]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[18]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[17]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[16]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[15]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[14]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[13]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[12]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[11]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[10]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[9]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[8]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[7]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[6]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[5]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[4]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[3]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[2]__0) is unused and will be removed from module Double_Digit_Counter.
+WARNING: [Synth 8-3332] Sequential element (STATE_reg[1]__0) is unused and will be removed from module Double_Digit_Counter.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4525 ; free virtual = 22504
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 958 ; free virtual = 20013
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -219,13 +342,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4401 ; free virtual = 22380
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 834 ; free virtual = 19889
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1785.688 ; gain = 431.816 ; free physical = 4401 ; free virtual = 22380
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1785.691 ; gain = 431.812 ; free physical = 834 ; free virtual = 19889
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,8 +359,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\STATE_reg[0] ) from module (Double_Digit_Counter) as it has self-loop and (\STATE_reg[0]__0 ) is actual driver [/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.srcs/sources_1/new/Double_Digit_Counter.v:81]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 831 ; free virtual = 19886
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -261,7 +385,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -274,7 +398,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,25 +410,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -320,17 +444,17 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
+|1     |BUFG   |     1|
 |2     |CARRY4 |     8|
 |3     |LUT1   |     8|
 |4     |LUT2   |     8|
-|5     |LUT3   |    23|
-|6     |LUT4   |    31|
-|7     |LUT5   |    19|
-|8     |LUT6   |    12|
-|9     |FDCE   |    52|
+|5     |LUT3   |    21|
+|6     |LUT4   |    37|
+|7     |LUT5   |    16|
+|8     |LUT6   |    10|
+|9     |FDCE   |    51|
 |10    |FDPE   |     5|
-|11    |FDRE   |    19|
+|11    |FDRE   |    20|
 |12    |IBUF   |     6|
 |13    |OBUF   |    12|
 +------+-------+------+
@@ -339,16 +463,16 @@ Report Instance Areas:
 +------+---------+---------+------+
 |      |Instance |Module   |Cells |
 +------+---------+---------+------+
-|1     |top      |         |   205|
+|1     |top      |         |   203|
 |2     |  U1     |db_fsm   |    50|
 |3     |  U2     |db_fsm_0 |    16|
 +------+---------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.695 ; gain = 439.824 ; free physical = 4399 ; free virtual = 22378
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.699 ; gain = 439.820 ; free physical = 832 ; free virtual = 19888
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.695 ; gain = 121.488 ; free physical = 4453 ; free virtual = 22432
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1793.703 ; gain = 439.824 ; free physical = 4453 ; free virtual = 22432
+Synthesis finished with 0 errors, 93 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1793.699 ; gain = 121.484 ; free physical = 885 ; free virtual = 19941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.707 ; gain = 439.820 ; free physical = 885 ; free virtual = 19941
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -358,11 +482,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 63 Warnings, 93 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1793.703 ; gain = 439.977 ; free physical = 4451 ; free virtual = 22430
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1793.707 ; gain = 439.977 ; free physical = 884 ; free virtual = 19940
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.runs/synth_1/Double_Digit_Counter.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Double_Digit_Counter_utilization_synth.rpt -pb Double_Digit_Counter_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1817.707 ; gain = 0.000 ; free physical = 4448 ; free virtual = 22427
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 21 18:06:10 2018...
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1817.711 ; gain = 0.000 ; free physical = 882 ; free virtual = 19937
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 28 15:05:48 2018...

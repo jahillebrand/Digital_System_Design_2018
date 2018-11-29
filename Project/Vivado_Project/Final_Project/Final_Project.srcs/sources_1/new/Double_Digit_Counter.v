@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+//TODO: Make minute increment and hour increment buttons actually work
 //////////////////////////////////////////////////////////////////////////////////
 // Company: UW-Stout
 // Engineer: Jacob Hillebrand
@@ -34,7 +35,7 @@ module Double_Digit_Counter(
     reg [12:1] DIVIDER;
     reg [23:0] BCD;
     reg [3:0] DECODE_BCD;
-    integer STATE = 1'b0;
+    integer STATE = 1;
 
     wire SCAN_clk;
     wire HB_INC_clk;
@@ -61,12 +62,12 @@ module Double_Digit_Counter(
 
 
     // Controller for the hour/min vs seconds on the display
-    always @(posedge EN_HM, posedge EN_SEC)
+    always @(posedge clk)
         begin
             if (EN_HM)
-                STATE <= 1'b0;
-            else
-                STATE <= 1'b1;
+                STATE <= 0;
+            else if (EN_SEC)
+                STATE <= 1;
         end
 
    // 00 to 99 up counter
@@ -76,18 +77,20 @@ module Double_Digit_Counter(
    //button_clk
    always @(negedge HB_INC_clk or posedge reset)
     begin
-        if(reset)
+        if(reset) begin
             BCD <= 23'h00000;
+            STATE <= 0;
+            end
         else
             begin
                     if(BCD[3:0] == 4'h9)
                         begin
-                        if (BCD[7:4] == 4'h9)
+                        if (BCD[7:4] == 4'h5)
                             if (BCD[11:8] == 4'h9)
-                                if (BCD[15:12] ==4'h9)
-                                    if (BCD[19:16] == 4'h9)
-                                        if (BCD[23:20] == 4'h9)
-                                            BCD <= 16'h0000;
+                                if (BCD[15:12] ==4'h5)
+                                    if (BCD[19:16] == 4'h4)
+                                        if (BCD[23:20] == 4'h2)
+                                            BCD <= 24'h0000;
                                         else
                                             begin
                                                 BCD[23:20] = BCD[23:20] + 1;
@@ -117,8 +120,6 @@ module Double_Digit_Counter(
                 else
                     begin
                     BCD[3:0] <= BCD[3:0] + 1;
-                    if(BCD == 23'h999999)    
-                        BCD <= 23'h000000;
                     end
               end
       end
@@ -130,7 +131,7 @@ module Double_Digit_Counter(
         begin
             if(reset)
                 ENABLE <= 4'b1110;
-            else if (STATE == 1'b0)
+            else if (STATE == 0)
                 ENABLE <= {4'b11,ENABLE[3:1],ENABLE[4]};
             else
                 ENABLE <= {4'b11,ENABLE[1],ENABLE[2]};
