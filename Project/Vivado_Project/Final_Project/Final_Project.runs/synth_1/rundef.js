@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Double_Digit_Counter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Double_Digit_Counter.tcl" );
+         "-log clock_24_7seg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_24_7seg.tcl" );
 
 
 

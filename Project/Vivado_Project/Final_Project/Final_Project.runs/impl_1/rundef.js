@@ -29,7 +29,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log Double_Digit_Counter.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Double_Digit_Counter.tcl -notrace" );
+         "-log clock_24_7seg.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clock_24_7seg.tcl -notrace" );
 
 
 

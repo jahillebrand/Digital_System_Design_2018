@@ -32,7 +32,7 @@ module Double_Digit_Counter(
     output reg [7:0] SEGMENT
     );
 
-    reg [12:1] DIVIDER;
+    reg [25:1] DIVIDER;
     reg [23:0] BCD;
     reg [3:0] DECODE_BCD;
     integer STATE = 1;
@@ -48,11 +48,11 @@ module Double_Digit_Counter(
     always @(negedge clk or posedge reset)
         begin
             if(reset)
-                DIVIDER <= 12'h000;
+                DIVIDER <= 24'h000000;
             else
                 DIVIDER <= DIVIDER + 1;
         end
-   assign SCAN_clk = DIVIDER[12];
+   assign SCAN_clk = DIVIDER[25];
    //Assign clk to wire to avoid routing issue?????
 
 
@@ -61,27 +61,61 @@ module Double_Digit_Counter(
    db_fsm U2 (.clk(clk), .reset(reset), .sw(MB_INC), .db(MB_INC_clk));
 
 
-    // Controller for the hour/min vs seconds on the display
-    always @(posedge clk)
-        begin
-            if (EN_HM)
-                STATE <= 0;
-            else if (EN_SEC)
-                STATE <= 1;
-        end
-
-   // 00 to 99 up counter
-
-   //Controls the value of bcd; if 'reset' is pressed, the value
-   //is set to zero. Otherwise, the value is incremented on
-   //button_clk
-   always @(negedge HB_INC_clk or posedge reset)
+   //Controls the value of bcd for every possible change method
+   always @(posedge HB_INC_clk or posedge reset or posedge MB_INC_clk or posedge SCAN_clk)
     begin
+        //For when the reset button is pressed
         if(reset) begin
-            BCD <= 23'h00000;
+            BCD <= 24'h000000;
             STATE <= 0;
             end
-        else
+            
+        //For when the "Hour increment" button is pressed
+        else if (HB_INC_clk) begin
+            if (BCD[19:16] == 4'h4)
+                if (BCD[23:20] == 4'h2)
+                    BCD <= 24'h000000;
+                else
+                    begin
+                        BCD[23:20] = BCD[23:20] + 1;
+                        BCD[19:0] = 20'h00000;
+                    end
+            else
+                begin
+                    BCD[19:16] = BCD[19:16] +1;
+                end   
+        end
+        
+        //For when the "Minute increment" button is pressed
+        else if (MB_INC_clk) begin
+            if (BCD[11:8] == 4'h9)
+                if (BCD[15:12] ==4'h5)
+                    if (BCD[19:16] == 4'h4)
+                        if (BCD[23:20] == 4'h2)
+                            BCD <= 24'h000000;
+                        else
+                            begin
+                                BCD[23:20] = BCD[23:20] + 1;
+                                BCD[19:0] = 20'h00000;
+                            end
+                    else
+                        begin
+                            BCD[19:16] = BCD[19:16] +1;
+                            BCD[15:0] = 16'h0000;
+                        end   
+                else
+                    begin
+                        BCD[15:12] = BCD[15:12] + 1;
+                        BCD[11:0] = 12'h000;
+                    end
+            else
+                begin
+                    BCD[11:8] <= BCD[11:8] + 1;
+                end
+        end
+        
+        //For when the clock signals the seconds to increment
+        else if (SCAN_clk)
             begin
                     if(BCD[3:0] == 4'h9)
                         begin
@@ -90,7 +124,7 @@ module Double_Digit_Counter(
                                 if (BCD[15:12] ==4'h5)
                                     if (BCD[19:16] == 4'h4)
                                         if (BCD[23:20] == 4'h2)
-                                            BCD <= 24'h0000;
+                                            BCD <= 24'h000000;
                                         else
                                             begin
                                                 BCD[23:20] = BCD[23:20] + 1;
@@ -123,17 +157,24 @@ module Double_Digit_Counter(
                     end
               end
       end
+      
+      // Controller for the hour/min vs seconds on the display
+          always @(posedge clk)
+              begin
+                  if (EN_HM)
+                      STATE <= 0;
+                  else if (EN_SEC)
+                      STATE <= 1;
+              end
 
 
     // Enable the LED Display
     // Based on the STATE variable, the proper displays will be enabled
-    always @(negedge SCAN_clk or posedge reset)
+    always @(posedge clk)
         begin
-            if(reset)
-                ENABLE <= 4'b1110;
-            else if (STATE == 0)
+            if (STATE == 0)
                 ENABLE <= {4'b11,ENABLE[3:1],ENABLE[4]};
-            else
+            else if (STATE == 1)
                 ENABLE <= {4'b11,ENABLE[1],ENABLE[2]};
         end
 

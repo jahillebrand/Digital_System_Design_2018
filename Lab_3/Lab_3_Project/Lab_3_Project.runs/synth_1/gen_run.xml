@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1537303191">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1543958454">
   <File Type="VDS-TIMING-PB" Name="single_digit_counter_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="single_digit_counter_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="single_digit_counter.dcp"/>
-  <File Type="PA-TCL" Name="single_digit_counter.tcl"/>
-  <File Type="REPORTS-TCL" Name="single_digit_counter_reports.tcl"/>
-  <File Type="RDS-RDS" Name="single_digit_counter.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="single_digit_counter_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="single_digit_counter_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="single_digit_counter_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="single_digit_counter_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="single_digit_counter_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="single_digit_counter.vds"/>
+  <File Type="REPORTS-TCL" Name="single_digit_counter_reports.tcl"/>
+  <File Type="PA-TCL" Name="single_digit_counter.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/single_digit_counter.v">

@@ -4,8 +4,8 @@
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 # Clock signal
-set_property PACKAGE_PIN W5 [get_ports clk]							
-	set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property PACKAGE_PIN W5 [get_ports CLK]							
+	set_property IOSTANDARD LVCMOS33 [get_ports CLK]
 	#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports CLK100MHZ]
  
 # Switches
@@ -108,16 +108,21 @@ set_property PACKAGE_PIN W4 [get_ports {ENABLE[4]}]
 
 
 ##Buttons
-set_property PACKAGE_PIN U18 [get_ports reset]						
-	set_property IOSTANDARD LVCMOS33 [get_ports reset]
-set_property PACKAGE_PIN T18 [get_ports EN_HM]						
-	set_property IOSTANDARD LVCMOS33 [get_ports EN_HM]
-set_property PACKAGE_PIN W19 [get_ports HB_INC]						
-	set_property IOSTANDARD LVCMOS33 [get_ports HB_INC]
-set_property PACKAGE_PIN T17 [get_ports MB_INC]						
-	set_property IOSTANDARD LVCMOS33 [get_ports MB_INC]
-set_property PACKAGE_PIN U17 [get_ports EN_SEC]						
-	set_property IOSTANDARD LVCMOS33 [get_ports EN_SEC]
+#btnC
+set_property PACKAGE_PIN U18 [get_ports RESET]						
+	set_property IOSTANDARD LVCMOS33 [get_ports RESET]
+#btnUP
+set_property PACKAGE_PIN T18 [get_ports MINUTE_BUTTON]						
+	set_property IOSTANDARD LVCMOS33 [get_ports MINUTE_BUTTON]
+#btnL
+set_property PACKAGE_PIN W19 [get_ports HOUR_BUTTON]						
+	set_property IOSTANDARD LVCMOS33 [get_ports HOUR_BUTTON]
+#btnR
+set_property PACKAGE_PIN T17 [get_ports DISPLAY_BUTTON]						
+	set_property IOSTANDARD LVCMOS33 [get_ports DISPLAY_BUTTON]
+
+#set_property PACKAGE_PIN U17 [get_ports EN_SEC]						
+#	set_property IOSTANDARD LVCMOS33 [get_ports EN_SEC]
  
 
 

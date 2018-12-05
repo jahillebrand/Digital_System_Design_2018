@@ -1,85 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1543439103">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1544042766">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-DRC" Name="Double_Digit_Counter.drc"/>
-  <File Type="BG-BGN" Name="Double_Digit_Counter.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="Double_Digit_Counter.sysdef"/>
+  <File Type="BG-DRC" Name="clock_24_7seg.drc"/>
+  <File Type="BG-BGN" Name="clock_24_7seg.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="clock_24_7seg.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Double_Digit_Counter.ltx"/>
-  <File Type="BITSTR-MMI" Name="Double_Digit_Counter.mmi"/>
-  <File Type="BITSTR-BMM" Name="Double_Digit_Counter_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Double_Digit_Counter.nky"/>
-  <File Type="BITSTR-RBT" Name="Double_Digit_Counter.rbt"/>
-  <File Type="BITSTR-MSK" Name="Double_Digit_Counter.msk"/>
-  <File Type="BG-BIN" Name="Double_Digit_Counter.bin"/>
-  <File Type="BG-BIT" Name="Double_Digit_Counter.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Double_Digit_Counter_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Double_Digit_Counter_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Double_Digit_Counter_bus_skew_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="Double_Digit_Counter.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Double_Digit_Counter_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Double_Digit_Counter_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Double_Digit_Counter_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Double_Digit_Counter_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Double_Digit_Counter_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Double_Digit_Counter_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Double_Digit_Counter_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="Double_Digit_Counter_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Double_Digit_Counter_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="Double_Digit_Counter_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Double_Digit_Counter_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Double_Digit_Counter_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="Double_Digit_Counter_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="Double_Digit_Counter_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="Double_Digit_Counter_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="Double_Digit_Counter_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Double_Digit_Counter_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Double_Digit_Counter_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Double_Digit_Counter_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="Double_Digit_Counter_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="Double_Digit_Counter_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="Double_Digit_Counter_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Double_Digit_Counter_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="Double_Digit_Counter_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Double_Digit_Counter_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="Double_Digit_Counter_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="Double_Digit_Counter_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Double_Digit_Counter_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Double_Digit_Counter_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Double_Digit_Counter_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="Double_Digit_Counter_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Double_Digit_Counter_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Double_Digit_Counter_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="Double_Digit_Counter_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Double_Digit_Counter_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="Double_Digit_Counter_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Double_Digit_Counter_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="Double_Digit_Counter_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="Double_Digit_Counter_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="Double_Digit_Counter_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Double_Digit_Counter_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Double_Digit_Counter_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="Double_Digit_Counter_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Double_Digit_Counter.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Double_Digit_Counter_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="Double_Digit_Counter_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Double_Digit_Counter_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="Double_Digit_Counter_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Double_Digit_Counter_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="Double_Digit_Counter_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Double_Digit_Counter_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="Double_Digit_Counter.tcl"/>
+  <File Type="BITSTR-LTX" Name="clock_24_7seg.ltx"/>
+  <File Type="BITSTR-MMI" Name="clock_24_7seg.mmi"/>
+  <File Type="BITSTR-BMM" Name="clock_24_7seg_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="clock_24_7seg.nky"/>
+  <File Type="BITSTR-RBT" Name="clock_24_7seg.rbt"/>
+  <File Type="BITSTR-MSK" Name="clock_24_7seg.msk"/>
+  <File Type="BG-BIN" Name="clock_24_7seg.bin"/>
+  <File Type="BG-BIT" Name="clock_24_7seg.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="clock_24_7seg_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="clock_24_7seg_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="clock_24_7seg_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="clock_24_7seg.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="clock_24_7seg_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="clock_24_7seg_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="clock_24_7seg_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="clock_24_7seg_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="clock_24_7seg_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="clock_24_7seg_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="clock_24_7seg_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="clock_24_7seg_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="clock_24_7seg_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="clock_24_7seg_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="clock_24_7seg_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="clock_24_7seg_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="clock_24_7seg_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="clock_24_7seg_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="clock_24_7seg_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="clock_24_7seg_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="clock_24_7seg_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="clock_24_7seg_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="clock_24_7seg_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="clock_24_7seg_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="clock_24_7seg_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="clock_24_7seg_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="clock_24_7seg_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="clock_24_7seg_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="clock_24_7seg_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="clock_24_7seg_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="clock_24_7seg_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="clock_24_7seg_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="clock_24_7seg_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="clock_24_7seg_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="clock_24_7seg_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="clock_24_7seg_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="clock_24_7seg_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="clock_24_7seg_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="clock_24_7seg_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="clock_24_7seg_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="clock_24_7seg_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="clock_24_7seg_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="clock_24_7seg_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="clock_24_7seg_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="clock_24_7seg_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="clock_24_7seg_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="clock_24_7seg_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="clock_24_7seg.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="clock_24_7seg_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="clock_24_7seg_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="clock_24_7seg_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="clock_24_7seg_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="clock_24_7seg_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="clock_24_7seg_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="clock_24_7seg_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="clock_24_7seg.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/db_fsm.v">
+    <File Path="$PSRCDIR/sources_1/new/clock_24_7seg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Double_Digit_Counter.v">
+    <File Path="$PPRDIR/../CLOCK_24_7Seg.v">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -87,7 +88,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Double_Digit_Counter"/>
+      <Option Name="TopModule" Val="clock_24_7seg"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
