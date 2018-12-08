@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date             : Wed Dec  5 14:47:53 2018
+| Date             : Sat Dec  8 11:12:49 2018
 | Host             : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command          : report_power -file clock_24_7seg_power_routed.rpt -pb clock_24_7seg_power_summary_routed.pb -rpx clock_24_7seg_power_routed.rpx
 | Design           : clock_24_7seg
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 10.154       |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 10.011       |
-| Device Static (W)        | 0.142        |
-| Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 34.2         |
-| Junction Temperature (C) | 75.8         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 24.980 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 24.494                           |
+| Device Static (W)        | 0.486                            |
+| Effective TJA (C/W)      | 5.0                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.329 |      171 |       --- |             --- |
-|   LUT as Logic |     0.283 |       65 |     20800 |            0.31 |
-|   Register     |     0.027 |       70 |     41600 |            0.17 |
+| Slice Logic    |     0.639 |      228 |       --- |             --- |
+|   LUT as Logic |     0.584 |      101 |     20800 |            0.49 |
+|   Register     |     0.035 |       85 |     41600 |            0.20 |
 |   CARRY4       |     0.013 |        7 |      8150 |            0.09 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |     0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.304 |      132 |       --- |             --- |
-| I/O            |     9.378 |       17 |       106 |           16.04 |
-| Static Power   |     0.142 |          |           |                 |
-| Total          |    10.154 |          |           |                 |
+| Signals        |     0.842 |      175 |       --- |             --- |
+| I/O            |    23.012 |       28 |       106 |           26.42 |
+| Static Power   |     0.486 |          |           |                 |
+| Total          |    24.980 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,16 +72,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.708 |       0.641 |      0.067 |
-| Vccaux    |       1.800 |     0.362 |       0.343 |      0.019 |
-| Vcco33    |       3.300 |     2.653 |       2.652 |      0.001 |
+| Vccint    |       1.000 |     1.830 |       1.490 |      0.341 |
+| Vccaux    |       1.800 |     0.896 |       0.843 |      0.053 |
+| Vcco33    |       3.300 |     6.512 |       6.511 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.010 |       0.000 |      0.010 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -138,7 +139,7 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| clock_24_7seg |    10.011 |
+| clock_24_7seg |    24.494 |
 +---------------+-----------+
 
 

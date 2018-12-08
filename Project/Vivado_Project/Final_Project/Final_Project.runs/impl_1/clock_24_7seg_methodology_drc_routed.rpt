@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Wed Dec  5 14:47:53 2018
+| Date         : Sat Dec  8 11:12:48 2018
 | Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command      : report_methodology -file clock_24_7seg_methodology_drc_routed.rpt -pb clock_24_7seg_methodology_drc_routed.pb -rpx clock_24_7seg_methodology_drc_routed.rpx
 | Design       : clock_24_7seg
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 70
+             Violations found: 85
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 70         |
+| TIMING-17 | Warning  | Non-clocked sequential cell | 85         |
 +-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -364,20 +364,95 @@ Related violations: <none>
 
 TIMING-17#67 Warning
 Non-clocked sequential cell  
-The clock pin MINUTE_DEBOUNCE_reg[0]/C is not reached by a timing clock
+The clock pin LCM_COUNT_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Warning
 Non-clocked sequential cell  
-The clock pin MINUTE_DEBOUNCE_reg[1]/C is not reached by a timing clock
+The clock pin LCM_COUNT_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Warning
 Non-clocked sequential cell  
-The clock pin MINUTE_DEBOUNCE_reg[2]/C is not reached by a timing clock
+The clock pin LCM_COUNT_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Warning
+Non-clocked sequential cell  
+The clock pin LCM_COUNT_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Warning
+Non-clocked sequential cell  
+The clock pin LCM_COUNT_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Warning
+Non-clocked sequential cell  
+The clock pin LCM_COUNT_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Warning
+Non-clocked sequential cell  
+The clock pin LCM_DATA_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Warning
+Non-clocked sequential cell  
+The clock pin LCM_RS_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Warning
+Non-clocked sequential cell  
+The clock pin MINUTE_DEBOUNCE_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Warning
+Non-clocked sequential cell  
+The clock pin MINUTE_DEBOUNCE_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Warning
+Non-clocked sequential cell  
+The clock pin MINUTE_DEBOUNCE_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Warning
 Non-clocked sequential cell  
 The clock pin MINUTE_DEBOUNCE_reg[3]/C is not reached by a timing clock
 Related violations: <none>

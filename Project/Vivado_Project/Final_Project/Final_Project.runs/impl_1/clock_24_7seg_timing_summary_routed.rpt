@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
-| Date         : Wed Dec  5 14:47:53 2018
+| Date         : Sat Dec  8 11:12:49 2018
 | Host         : hpl-fedora running 64-bit Fedora release 29 (Twenty Nine)
 | Command      : report_timing_summary -max_paths 10 -file clock_24_7seg_timing_summary_routed.rpt -pb clock_24_7seg_timing_summary_routed.pb -rpx clock_24_7seg_timing_summary_routed.rpx -warn_on_violation
 | Design       : clock_24_7seg
@@ -56,6 +56,8 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: DIVIDER_reg[16]/Q (HIGH)
 
+ There are 15 register/latch pins with no clock driven by root clock pin: DIVIDER_reg[17]/Q (HIGH)
+
  There are 9 register/latch pins with no clock driven by root clock pin: DIVIDER_reg[20]/Q (HIGH)
 
  There are 16 register/latch pins with no clock driven by root clock pin: DIVIDER_reg[24]/Q (HIGH)
@@ -87,7 +89,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 176 pins that are not constrained for maximum delay. (HIGH)
+ There are 206 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -101,7 +103,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 11 ports with no output delay specified. (HIGH)
+ There are 21 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

@@ -28,6 +28,11 @@
 
 module clock_24_7seg(
     input CLK, RESET, DISPLAY_BUTTON, MINUTE_BUTTON, HOUR_BUTTON,
+    
+    //For LCD
+    output LCM_RW, LCM_EN, LCM_RS,
+    output reg [7:0] LCM_DATA,
+    
     output [4:1] ENABLE,
     output [7:0] SEGMENT
     );
@@ -42,6 +47,13 @@ module clock_24_7seg(
     reg [25:1] DIVIDER;
     reg [23:0] BCD;
     reg FLAG;
+    
+    //LCD declarations
+    reg [5:0] LCM_COUNT;
+    reg LCM_RW;
+    reg LCM_RS;
+    wire INIT_CLK;
+    wire LCM_EN;
     
     //Wire declarations
     wire MINUTE_SET;
@@ -73,7 +85,11 @@ module clock_24_7seg(
     assign DISPLAY_CLK = DIVIDER[20];
     assign ADJUST_CLK = DIVIDER[24];
     assign COUNT_CLK = DIVIDER[25];
+    //for LCD
+    assign INIT_CLK = DIVIDER[17]; //LCM clock
+    assign LCM_EN = INIT_CLK; //Clock for LCM Enable pin
     
+        
     /**************************************
     * Seconds Timer with carry functions
     **************************************/
@@ -271,5 +287,82 @@ module clock_24_7seg(
                     FLAG <= 1'b1;
             end
     end
+    
+        /******************************
+     * Initial And Write LCM Data *
+     ******************************/  
+    
+    //Always block for setting LCD Display
+    always @(posedge INIT_CLK or posedge RESET)
+    if (RESET)
+        begin
+            LCM_COUNT = 0;
+            LCM_RW <= 1'b0;
+        end
+    else
+        begin
+            case (LCM_COUNT)
+                0 : 
+                    begin
+                        LCM_RS <= 1'b0;
+                        LCM_DATA <= 8'h38;
+                    end
+                2 : LCM_DATA <= 8'h01;
+                3 : LCM_DATA <= 8'h06;
+                4 : LCM_DATA <= 8'h0C;
+                5 : LCM_DATA <= 8'h80;
+                6 : 
+                    begin
+                        LCM_RS <= 1'b1;
+                        LCM_DATA <= 8'h20; //SPACE
+                    end 
+                7 : LCM_DATA <= 8'h20; //SPACE
+                8 : LCM_DATA <= 8'h32; //2
+                9 : LCM_DATA <= 8'h34; //4
+                10 : LCM_DATA <= 8'h2D; //-
+                11 : LCM_DATA <= 8'h48; //H
+                12 : LCM_DATA <= 8'h72; //r
+                13 : LCM_DATA <= 8'h2E; //.
+                14 : LCM_DATA <= 8'h20; //SPACE
+                15 : LCM_DATA <= 8'h43; //C
+                16 : LCM_DATA <= 8'h6C; //l
+                17 : LCM_DATA <= 8'h6F; //o
+                18 : LCM_DATA <= 8'h63; //c
+                19 : LCM_DATA <= 8'h6B; //k
+                20 : LCM_DATA <= 8'h20; //SPACE
+                21 : LCM_DATA <= 8'h20; //SPACE
+                22 : 
+                    begin
+                        LCM_RS <= 1'b0;
+                        LCM_DATA <= 8'hC0; // Set Cursor
+                    end
+                23 :
+                    begin
+                        LCM_RS <= 1'b1;
+                        LCM_DATA <= 8'h20; //SPACE
+                    end
+                24 : LCM_DATA <= 8'h20; //SPACE
+                25 : LCM_DATA <= 8'h20; //SPACE
+                26 : LCM_DATA <= 8'h20; //SPACE
+                27 : LCM_DATA <= {4'h3, BCD[23:20]};
+                28 : LCM_DATA <= {4'h3, BCD[19:16]};
+                29 : LCM_DATA <= 8'h3A; //:
+                30 : LCM_DATA <= {4'h3, BCD[15:12]};
+                31 : LCM_DATA <= {4'h3, BCD[11:8]};
+                32 : LCM_DATA <= 8'h3A; //:
+                33 : LCM_DATA <= {4'h3, BCD[7:4]};
+                34 : LCM_DATA <= {4'h3, BCD[3:0]};
+                35 : LCM_DATA <= 8'h20; //SPACE
+                36 : LCM_DATA <= 8'h20; //SPACE
+                37 : LCM_DATA <= 8'h20; //SPACE
+                38 : LCM_DATA <= 8'h20; //SPACE
+                default : LCM_DATA <= LCM_DATA;
+            endcase
+            
+            if (LCM_COUNT < 38)
+                LCM_COUNT = LCM_COUNT + 1;
+            else
+                LCM_COUNT = 22;
+        end
     
 endmodule

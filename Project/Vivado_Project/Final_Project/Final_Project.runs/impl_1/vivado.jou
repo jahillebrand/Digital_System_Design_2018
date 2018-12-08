@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Dec  5 14:46:47 2018
-# Process ID: 4744
+# Start of session at: Sat Dec  8 11:11:44 2018
+# Process ID: 4716
 # Current directory: /home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.runs/impl_1
 # Command line: vivado -log clock_24_7seg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source clock_24_7seg.tcl -notrace
 # Log file: /home/exposedbuckle48/Documents/Semester_5/DSD/Project/Vivado_Project/Final_Project/Final_Project.runs/impl_1/clock_24_7seg.vdi

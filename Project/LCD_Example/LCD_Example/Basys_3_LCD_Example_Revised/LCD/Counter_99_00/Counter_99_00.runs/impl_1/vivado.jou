@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 17 11:31:24 2018
+# Process ID: 6288
+# Current directory: C:/Teaching_Materials/CEE-325 Fall 2018/Week 13 Digital CLock/New_LCD_Revised/Basys_3_LCD_Example_Revised/LCD/Counter_99_00/Counter_99_00.runs/impl_1
+# Command line: vivado.exe -log Counter_99_00.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Counter_99_00.tcl -notrace
+# Log file: C:/Teaching_Materials/CEE-325 Fall 2018/Week 13 Digital CLock/New_LCD_Revised/Basys_3_LCD_Example_Revised/LCD/Counter_99_00/Counter_99_00.runs/impl_1/Counter_99_00.vdi
+# Journal file: C:/Teaching_Materials/CEE-325 Fall 2018/Week 13 Digital CLock/New_LCD_Revised/Basys_3_LCD_Example_Revised/LCD/Counter_99_00/Counter_99_00.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Counter_99_00.tcl -notrace
